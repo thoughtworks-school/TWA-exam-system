@@ -1,3 +1,5 @@
+项目介绍
+===
 欢迎你来到这里，你可以用这个项目练习在 Java 技术栈上快速实现 RESTful 的 API。
 
 ### 项目介绍
@@ -29,7 +31,7 @@
 
 也就是说`./gradlew build` 能够成功执行。
 
-Good luck！
+运行项目
 ==========
 
 ### 开发环境
@@ -59,3 +61,5 @@ DROP DATABASE IF EXISTS `gaia`; CREATE SCHEMA `gaia` DEFAULT CHARACTER SET utf8 
 - 中心服务器：<http://localhost:8080/gaia/rest/application.wadl>
 
 *注意：更改localhost到你希望查看的服务器IP*
+
+[开始闯关](#1)
