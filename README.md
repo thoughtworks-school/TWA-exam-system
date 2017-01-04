@@ -60,4 +60,3 @@ DROP DATABASE IF EXISTS `gaia`; CREATE SCHEMA `gaia` DEFAULT CHARACTER SET utf8 
 
 *注意：更改localhost到你希望查看的服务器IP*
 
-[开始闯关](./issues)
