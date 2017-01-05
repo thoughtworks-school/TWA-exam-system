@@ -1,0 +1,28 @@
+#%RAML 1.0
+---
+title: "ThoughtWorks School Online Exam System"
+version: v1
+baseUri: http://localhost:8080
+/users:
+    post:
+        description: "Create a new user"
+        queryParameters:
+            email:
+            password:
+                description: "Length must between 8 and 18 characters."
+        responses:
+            201:
+                body:
+                    application/json:
+                        example:
+                            {"login": "/authentication"}
+            400:
+                body:
+                    application/json:
+                        example:
+                            {"error": "Invalid email or password"}
+            409:
+                body:
+                    application/json:
+                        example:
+                            {"error": "An user with this email already exists"}
