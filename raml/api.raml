@@ -6,10 +6,10 @@ baseUri: http://localhost:8080
 /users:
     post:
         description: "Create a new user"
-        queryParameters:
-            email:
-            password:
-                description: "Length must between 8 and 18 characters."
+        body:
+            application/json:
+                example:
+                    {"email": "xbli@thoughtworks.com", "password": "p@ssw0rd"}
         responses:
             201:
                 body:
@@ -20,7 +20,7 @@ baseUri: http://localhost:8080
                 body:
                     application/json:
                         example:
-                            {"error": "Invalid email or password"}
+                            {"error": "Password lenght must between 8 and 18"}
             409:
                 body:
                     application/json:
