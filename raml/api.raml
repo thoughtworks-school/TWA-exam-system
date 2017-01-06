@@ -26,3 +26,21 @@ baseUri: http://localhost:8080
                     application/json:
                         example:
                             {"error": "An user with this email already exists"}
+/authentication:
+    post:
+        description: "Login"
+        body:
+            application/json:
+                example:
+                    {"email": "xbli@thoughtworks.com", "password": "p@ssw0rd"}
+        responses:
+            201:
+                body:
+                    application/json:
+                        example:
+                            {"view_profile": "/users/self"}
+            403:
+                body:
+                    application/json:
+                        example:
+                            {"error": "Invalid email or password"}
