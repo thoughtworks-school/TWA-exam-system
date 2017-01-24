@@ -28,6 +28,7 @@
 * 通过所有的 Check Style 检查
 
 也就是说`./gradlew build` 能够成功执行。
+（需求描述中存在许多不明确之处，自行决定即可，因为重点是练习实现 API，而不是真的实现一个系统）
 
 运行项目
 ==========
@@ -60,3 +61,4 @@ DROP DATABASE IF EXISTS `gaia`; CREATE SCHEMA `gaia` DEFAULT CHARACTER SET utf8 
 
 *注意：更改localhost到你希望查看的服务器IP*
 
+**有任何问题请联系 `xbli@thoughtworks.com` 或微信 `seabornlee`。**
